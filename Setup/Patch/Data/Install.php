@@ -21,16 +21,7 @@ class Install implements DataPatchInterface
 
     public function apply()
     {
-       $this->process->loadFiles(['Skukla_CustomDemo::fixtures/categories.csv',
-            'Skukla_CustomDemo::fixtures/stores.csv',
-            'Skukla_CustomDemo::fixtures/product_attributes.csv',
-            'Skukla_CustomDemo::fixtures/products.csv',
-            'Skukla_CustomDemo::fixtures/blocks.csv',
-            'Skukla_CustomDemo::fixtures/dynamic_blocks.csv',
-            'Skukla_CustomDemo::fixtures/pages.csv',
-            'Skukla_CustomDemo::fixtures/config.json',
-            'Skukla_CustomDemo::fixtures/config.csv',
-            'Skukla_CustomDemo::fixtures/customers.csv']);
+        $this->process->loadFiles('Skukla_CustomDemo');
     }
 
     public static function getDependencies()
