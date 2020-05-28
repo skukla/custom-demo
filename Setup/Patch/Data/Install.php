@@ -4,7 +4,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Skukla\CustomDemo\Setup\Patch\Data;
+namespace Skukla\CustomDemoShell\Setup\Patch\Data;
 
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use MagentoEse\DataInstall\Model\Process;
@@ -21,7 +21,7 @@ class Install implements DataPatchInterface
 
     public function apply()
     {
-        $this->process->loadFiles('Skukla_CustomDemo');
+        $this->process->loadFiles('Skukla_CustomDemoShell');
     }
 
     public static function getDependencies()

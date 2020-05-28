@@ -2,4 +2,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Skukla_CustomDemo', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Skukla_CustomDemoShell', __DIR__);

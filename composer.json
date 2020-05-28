@@ -1,21 +1,21 @@
 {
-  "name": "skukla/custom-demo",
-  "version": "1.0.0",
-  "description": "N/A",
-  "type": "magento2-module",
-  "require": {
-      "magento/framework": "*",
-      "magentoese/module-data-install": "*"
-  },
-  "license": [
-    "GNU General Public License (GPL)"
-  ],
-  "autoload": {
-    "files": [
-      "registration.php"
-    ],
-    "psr-4": {
-      "Skukla\\CustomDemo\\": ""
-    }
-  }
+	"name": "skukla/custom-demo-shell",
+	"version": "1.0.0",
+	"description": "N/A",
+	"type": "magento2-module",
+	"require": {
+		"magento/framework": "*",
+		"magentoese/module-data-install": "*"
+	},
+	"license": [
+		"GNU General Public License (GPL)"
+	],
+	"autoload": {
+		"files": [
+			"registration.php"
+		],
+		"psr-4": {
+			"Skukla\\CustomDemoShell\\": ""
+		}
+	}
 }
