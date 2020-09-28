@@ -9,7 +9,7 @@ namespace Skukla\CustomDemoShell\Setup\Patch\Data;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use MagentoEse\DataInstall\Model\Process;
 
-class Install implements DataPatchInterface
+class InstallStore implements DataPatchInterface
 {
     /** @var Process  */
     protected $process;
@@ -26,12 +26,12 @@ class Install implements DataPatchInterface
          *
          * the data files directory can be any directory in the root of the module, or a subdirectory (fixtures/grocery)
          */
-        $this->process->loadFiles('Skukla_CustomDemoShell', 'fixtures');
+        $this->process->loadFiles('Skukla_CustomDemoShell', 'fixtures', ['stores.csv']);
     }
 
     public static function getDependencies()
     {
-        return [InstallStore::class];
+        return [];
     }
 
     public function getAliases()
